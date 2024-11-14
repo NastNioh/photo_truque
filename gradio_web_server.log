@@ -1,0 +1,38 @@
+2024-09-19 17:02:15 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=16, model_list_mode='reload', share=False, moderate=False, embed=False)
+2024-09-19 17:02:19 | INFO | gradio_web_server | Models: []
+2024-09-19 17:02:19 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=16, model_list_mode='reload', share=False, moderate=False, embed=False)
+2024-09-19 17:02:19 | ERROR | stderr | C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\components\dropdown.py:163: UserWarning: The value passed into gr.Dropdown() is not in the list of choices. Please update the list of choices to include:  or set allow_custom_value=True.
+2024-09-19 17:02:19 | ERROR | stderr |   warnings.warn(
+2024-09-19 17:02:19 | ERROR | stderr | Traceback (most recent call last):
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+2024-09-19 17:02:19 | ERROR | stderr |     return _run_code(code, main_globals, None,
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+2024-09-19 17:02:19 | ERROR | stderr |     exec(code, run_globals)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\llava\serve\gradio_web_server.py", line 472, in <module>
+2024-09-19 17:02:19 | ERROR | stderr |     demo = build_demo(args.embed, concurrency_count=args.concurrency_count)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\llava\serve\gradio_web_server.py", line 341, in build_demo
+2024-09-19 17:02:19 | ERROR | stderr |     gr.Examples(examples=[
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\helpers.py", line 58, in create_examples
+2024-09-19 17:02:19 | ERROR | stderr |     examples_obj = Examples(
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\helpers.py", line 216, in __init__
+2024-09-19 17:02:19 | ERROR | stderr |     prediction_value = processing_utils.move_files_to_cache(
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\processing_utils.py", line 265, in move_files_to_cache
+2024-09-19 17:02:19 | ERROR | stderr |     return client_utils.traverse(data, _move_to_cache, client_utils.is_file_obj)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio_client\utils.py", line 919, in traverse
+2024-09-19 17:02:19 | ERROR | stderr |     return func(json_obj)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\processing_utils.py", line 257, in _move_to_cache
+2024-09-19 17:02:19 | ERROR | stderr |     temp_file_path = move_resource_to_block_cache(payload.path, block)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\processing_utils.py", line 234, in move_resource_to_block_cache
+2024-09-19 17:02:19 | ERROR | stderr |     return block.move_resource_to_block_cache(url_or_file_path)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\blocks.py", line 258, in move_resource_to_block_cache
+2024-09-19 17:02:19 | ERROR | stderr |     temp_file_path = processing_utils.save_file_to_cache(
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\processing_utils.py", line 170, in save_file_to_cache
+2024-09-19 17:02:19 | ERROR | stderr |     temp_dir = hash_file(file_path)
+2024-09-19 17:02:19 | ERROR | stderr |   File "C:\Users\Yonnih\AppData\Local\Programs\Python\Python310\lib\site-packages\gradio\processing_utils.py", line 102, in hash_file
+2024-09-19 17:02:19 | ERROR | stderr |     with open(file_path, "rb") as f:
+2024-09-19 17:02:19 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Yonnih\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\llava\\serve\\examples\\extreme_ironing.jpg'
+2024-09-19 17:02:20 | INFO | httpx | HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2024-09-19 17:02:21 | INFO | httpx | HTTP Request: POST https://api.gradio.app/gradio-initiated-analytics/ "HTTP/1.1 200 OK"
+2024-09-19 17:02:22 | INFO | httpx | HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-09-19 17:02:22 | INFO | stdout | IMPORTANT: You are using gradio version 4.16.0, however version 4.29.0 is available, please upgrade.
+2024-09-19 17:02:22 | INFO | stdout | --------
